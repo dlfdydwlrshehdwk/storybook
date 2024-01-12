@@ -1,0 +1,124 @@
+.header {
+  height: 80px;
+  &-wrap {
+    height: 100%;
+    padding: 0 100px;
+    .nav {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        & > a {
+          font-size: 32px;
+          font-weight: bold;
+          color: purple;
+          line-height: 80px;
+        }
+      }
+      & > ul {
+        display: flex;
+        gap: 24px;
+        & > li {
+          & > a { 
+
+          }
+        }
+      }
+    }
+  }
+  .aside {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 9997;
+    background-color: #fff;
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 12px;
+      .logo {
+        & > a {
+          font-size: 32px;
+          font-weight: bold;
+          color: purple;
+          line-height: 80px;
+        }
+      }
+    }
+    &-mid {
+      & > ul {
+        & > li {
+          & > a {
+            display: inline-block;
+            width: 100%;
+            padding: 24px 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 80px;
+  &-wrap {
+    height: 100%;
+    & > ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100%;
+      & > li {
+        &.action {
+          & > a {
+            color : blue;
+          }
+        }
+        & > a {
+          font-weight: 700;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  &.close {
+    &::before {
+      display: inline-block;
+      margin-right: 10px;
+      content: 'X';
+    }
+  }
+  &.heart {
+    &::before {
+      display: inline-block;
+      margin-right: 10px;
+      content: '♥';
+    }
+  }
+}
+div {
+  white-space: pre-line;
+} 
+.aaa {
+  justify-content: space-between;
+}
+.ui-input-set {
+  & > input:focus {
+    outline: none;
+    &::placeholder {
+      color : transparent
+    }
+  }
+}
