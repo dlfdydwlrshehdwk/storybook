@@ -113,7 +113,6 @@ btns[8] = {
   cls : 'heart'
 }
 
-
 export const Default = Template.bind({})
 Default.args = {
   backgroundColor : "#FFF",
