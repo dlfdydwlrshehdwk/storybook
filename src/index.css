@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btnnn {
+  border-radius: 50px;
+  border-color: #000;
+}

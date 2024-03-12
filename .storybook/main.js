@@ -1,6 +1,29 @@
-/** @type { import('@storybook/react-webpack5').StorybookConfig } */
+// module.exports = {
+//   stories: ['../src/components/**/*.stories.js'],
+//    staticDirs: ['../public'],
+//    addons: [
+//      '@storybook/addon-links',
+//      '@storybook/addon-essentials',
+//      '@storybook/preset-create-react-app',
+//      '@storybook/addon-interactions',
+//    ],
+//    features: {
+//      postcss: false,
+//    },
+//    framework: '@storybook/react',
+//    core: {
+//      builder: 'webpack4',
+//    },
+//  };
+
+
+// 원본
+ /** @type { import('@storybook/react-webpack5').StorybookConfig } */
 const config = {
-  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+  stories: [
+    "../src/**/*.mdx", 
+    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
+  ],
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
